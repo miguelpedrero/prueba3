@@ -4,13 +4,39 @@
 <button class="link"> <%= link_to "historia de Batman", :action => "batman" %> </button>
 <button id="dos" class="link"><%= link_to "historia de Superman", :action => "superman" %></button>
 
-<div>
-	<form action="">
+<div class="blue">
+	<form action="<%= pages_save_user_path %>" method="post">
+	<%= hidden_field_tag :authenticity_token,
+	form_authenticity_token %>
 		
-		
+	<h4>Nombre: </h4>
+	<input name="name" placeholder="Escribe Nombre de tu heroe " >
+
+	<br><br>
+	<h4>Correo: </h4>
+	<input name="email" placeholder="Escribe tu Correo">
 	</form>
+
+	<br><br>
+	<input type="submit" value="ENVIAR" >
+
 </div>
-         
+
+<div class="blue" id="dos">
+	<form >
+		
+	<h4>Nombre: </h4>
+	<input name="name" placeholder="Escribe Nombre de tu heroe " >
+
+	<br><br>
+	<h4>Correo: </h4>
+	<input name="email" placeholder="Escribe tu Correo">
+	</form>
+
+	<br><br>
+	<input type="submit" value="ENVIAR" >
+
+</div>
 	
 <!-- <img src="http://www.studiocity-macau.com/uploads/images/SC/Entertainment/Batman/batman_share.jpg" class="mitad">
 <img src="http://www.canonandculture.com/wp-content/uploads/2016/04/superman.jpeg" class="mitad"> -->
