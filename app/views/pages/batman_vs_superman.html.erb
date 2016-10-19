@@ -5,9 +5,8 @@
 <button id="dos" class="link"><%= link_to "historia de Superman", :action => "superman" %></button>
 
 <div class="blue">
-	<form action="<%= pages_save_user_path %>" method="post">
-	<%= hidden_field_tag :authenticity_token,
-	form_authenticity_token %>
+	<form method="post">
+
 		
 	<h4>Nombre: </h4>
 	<input name="name" placeholder="Escribe Nombre de tu heroe " >
